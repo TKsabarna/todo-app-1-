@@ -1,0 +1,48 @@
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+  gap: 8px;
+}
+
+.list-state--error { color: var(--danger); }
+
+.state-icon {
+  font-size: 36px;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.state-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.state-hint {
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+.spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  margin-bottom: 8px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
